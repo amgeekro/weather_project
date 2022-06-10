@@ -1,0 +1,5 @@
+<form method="post" action="{% url 'weather_api_view' %}">
+    {% csrf_token %}
+    <input name="city" type="text" placeholder="Enter City name or city code">
+    <button type="submit">result</button>
+</form>
